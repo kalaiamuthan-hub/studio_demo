@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Lens Studio | Photo & Video Studio</title>
+    <meta name="description" content="Royal Lens Studio - Professional photo and video studio. Beautiful photos for weddings, couples, babies, fashion, and events with fast delivery.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement-bar">
+        <div class="container announcement-inner">
+            <span><i class="fa-solid fa-sparkles"></i> <strong>Special Offer:</strong> Book your 2026 photoshoot now and get 15% off!</span>
+            <a href="#booking" class="announcement-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header id="mainHeader">
+        <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-camera-retro"></i></span>
+            <div class="logo-text">
+                <h2>Royal Lens</h2>
+                <span class="logo-tagline">PHOTO & VIDEO STUDIO</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav id="nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#features" class="nav-link">Why Us</a>
+            <a href="#portfolio" class="nav-link">Packages</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#booking" class="nav-link">Book Now</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#booking" class="btn btn-gold btn-header">
+                <i class="fa-solid fa-calendar-check"></i> Book a Shoot
+            </a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo-text">
+                <h2>Royal Lens</h2>
+                <span class="logo-tagline">PHOTO & VIDEO STUDIO</span>
+            </div>
+            <button class="close-mobile-btn" id="closeMobileNav">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About Studio</a>
+            <a href="#features" class="mobile-link">Why Choose Us</a>
+            <a href="#portfolio" class="mobile-link">Packages & Prices</a>
+            <a href="#gallery" class="mobile-link">Photo Gallery</a>
+            <a href="#reviews" class="mobile-link">Client Reviews</a>
+            <a href="#booking" class="mobile-link">Book a Shoot</a>
+            <a href="#contact" class="mobile-link">Contact Us</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="#booking" class="btn btn-gold w-100" id="mobileBookBtn">
+                <i class="fa-solid fa-calendar-check"></i> Book a Shoot
+            </a>
+            <div class="mobile-contact-info">
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-location-dot"></i> Studio & Outdoor Shoots</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+            <div class="hero-text-box reveal">
+                <div class="tag-badge">
+                    <span class="tag-star">✦</span>
+                    <span>PHOTO & VIDEO STUDIO</span>
+                    <span class="tag-star">✦</span>
+                </div>
+                <h1>Capture Your Moments,<br><span class="gold-gradient">Keep Memories Forever.</span></h1>
+                <p class="hero-desc">
+                    We take beautiful photos and videos for weddings, couples, babies, fashion, and events. Friendly service, high quality, and fast delivery.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#portfolio" class="btn btn-gold btn-lg">
+                        <span>See Packages</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#booking" class="btn btn-outline btn-lg">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>Book a Shoot</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Counter -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-num" data-target="10">0</h3><span class="plus">+</span>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3 class="stat-num" data-target="800">0</h3><span class="plus">+</span>
+                        <p>Happy Shoots</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3 class="stat-num" data-target="100">0</h3><span class="plus">%</span>
+                        <p>Best Quality</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3 class="rating-stars">4.9 <i class="fa-solid fa-star"></i></h3>
+                        <p>Top Rated</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Special Card -->
+            <div class="hero-floating-card reveal delay-2">
+                <div class="floating-badge">Popular</div>
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding Couple" class="floating-img">
+                <div class="floating-info">
+                    <h4>Wedding Photo & Video</h4>
+                    <p class="price-tag">From ₹75,000 <span class="old-price">₹90,000</span></p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="floating-subtext"><i class="fa-solid fa-circle-check"></i> HD Video + Drone + Photo Album</p>
+                </div>
+                <a href="#booking" class="order-quick-btn add-to-plate-btn" data-name="Wedding Photo & Video Package" title="Book Now">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </a>
+    </section>
+
+    <!-- Services Strip -->
+    <div class="regions-strip">
+        <div class="container regions-inner">
+            <span class="regions-label"><i class="fa-solid fa-camera"></i> What We Do:</span>
+            <div class="regions-tags">
+                <span class="region-badge">Weddings</span>
+                <span class="region-badge">Pre-Wedding Shoots</span>
+                <span class="region-badge">Fashion & Modeling</span>
+                <span class="region-badge">Baby & Newborn</span>
+                <span class="region-badge">Maternity Photos</span>
+                <span class="region-badge">Office Headshots</span>
+                <span class="region-badge">Birthday Parties</span>
+                <span class="region-badge">Drone Videos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Images -->
+                <div class="about-images reveal slide-left">
+                    <div class="about-img-main-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Professional Camera Gear" class="about-img-main">
+                    </div>
+                    <div class="about-img-secondary-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80" alt="Photographer Working" class="about-img-secondary">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-years">10+</span>
+                        <span class="exp-text">Years in Photography</span>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="about-content reveal slide-right">
+                    <div class="section-tag">
+                        <i class="fa-solid fa-crown"></i> ABOUT OUR STUDIO
+                    </div>
+                    <h2 class="section-title">We Make Your Special Days <span class="gold-gradient">Unforgettable</span></h2>
+                    <p class="lead-text">
+                        Welcome to <strong>Royal Lens Studio</strong>. We are a team of friendly, professional photographers and videographers who love capturing real emotions.
+                    </p>
+                    <p class="about-desc">
+                        We love capturing real smiles, happy moments, and fun times with your family and friends. We use top cameras, great studio lighting, and clean photo editing so you get pictures you will love and cherish for years.
+                    </p>
+
+                    <!-- Feature Items -->
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-video"></i></div>
+                            <div>
+                                <h4>Top Quality 4K Cameras</h4>
+                                <p>We use sharp, high-end cameras and lenses for clear and colorful photos.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div>
+                                <h4>Clean AC Studio & Good Lighting</h4>
+                                <p>Enjoy our private studio with air conditioning, great backdrops, and soft lights.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div>
+                                <h4>Premium Printed Photo Albums</h4>
+                                <p>Get your favorite pictures printed in luxury, long-lasting photo albums.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-action">
+                        <a href="#portfolio" class="btn btn-gold">View Our Packages</a>
+                        <div class="chef-quote">
+                            <span class="chef-name">David Anderson</span>
+                            <span class="chef-role">Head Photographer & Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> WHY CHOOSE US</span>
+                <h2 class="section-title">Simple, Easy & Reliable Service</h2>
+                <div class="title-separator"><span>✦</span></div>
+                <p class="section-subtitle">Here is why clients love working with our friendly photo studio team.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal delay-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <h3>Friendly Photographers</h3>
+                    <p>We make you feel relaxed in front of the camera and guide you with natural, easy poses.</p>
+                </div>
+
+                <div class="feature-card reveal delay-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Natural Photo Editing</h3>
+                    <p>Every photo is carefully edited with bright, natural colors and clean skin retouching.</p>
+                </div>
+
+                <div class="feature-card reveal delay-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                    </div>
+                    <h3>Fast Photo Delivery</h3>
+                    <p>No waiting for months! You get all your high-resolution photos quickly on a private online link.</p>
+                </div>
+
+                <div class="feature-card reveal delay-4">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Clear packages with fair prices. No hidden charges and no surprise costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="menu section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag"><i class="fa-solid fa-photo-film"></i> OUR PACKAGES</span>
+                <h2 class="section-title">Packages & Pricing</h2>
+                <div class="title-separator"><span>✦</span></div>
+                <p class="section-subtitle">Pick the package that fits your event. Custom packages are also available.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-filter="all">
+                    <i class="fa-solid fa-border-all"></i> All Packages
+                </button>
+                <button class="tab-btn" data-filter="wedding">
+                    <i class="fa-solid fa-heart"></i> Weddings & Couples
+                </button>
+                <button class="tab-btn" data-filter="portrait">
+                    <i class="fa-solid fa-user"></i> Fashion & Portraits
+                </button>
+                <button class="tab-btn" data-filter="baby">
+                    <i class="fa-solid fa-baby"></i> Baby & Maternity
+                </button>
+                <button class="tab-btn" data-filter="commercial">
+                    <i class="fa-solid fa-briefcase"></i> Events & Business
+                </button>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="cards" id="menuCards">
+
+                <!-- 1. Full Wedding Package -->
+                <div class="card reveal" data-category="wedding">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Wedding Package">
+                        <span class="card-badge bestseller">Most Popular</span>
+                        <div class="diet-indicator" title="Full HD Video">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 5.0</span>
+                            <span class="review-count">(400+ Weddings)</span>
+                        </div>
+                        <h3>Full Wedding Package</h3>
+                        <p class="card-desc">Complete wedding coverage. 2 Photographers + 2 Videographers, drone video, short video teaser, and a 40-page luxury printed photo album.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">85,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Full Wedding Package">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Pre-Wedding Couple Shoot -->
+                <div class="card reveal delay-1" data-category="wedding">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Couple Shoot">
+                        <span class="card-badge healthy">Couple Special</span>
+                        <div class="diet-indicator" title="Drone Video">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="review-count">(250+ Shoots)</span>
+                        </div>
+                        <h3>Pre-Wedding Couple Shoot</h3>
+                        <p class="card-desc">Outdoor photoshoot at your favorite location (beach, park, or heritage spots). Includes drone video, 1-minute teaser, and 50 edited photos.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">25,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Pre-Wedding Couple Shoot">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Fashion & Model Portfolio -->
+                <div class="card reveal delay-2" data-category="portrait">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Fashion Model Shoot">
+                        <span class="card-badge chef">Studio Special</span>
+                        <div class="diet-indicator" title="4 Outfits">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="review-count">(150+ Models)</span>
+                        </div>
+                        <h3>Fashion & Model Portfolio</h3>
+                        <p class="card-desc">Studio photoshoot with 4 outfit changes, professional lighting, expert posing guidance, and 20 magazine-style retouched photos.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">12,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Fashion & Model Portfolio">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Baby & Newborn Shoot -->
+                <div class="card reveal" data-category="baby">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=700&q=80" alt="Baby Photoshoot">
+                        <span class="card-badge sweet"><i class="fa-solid fa-heart"></i> Cute & Cozy</span>
+                        <div class="diet-indicator" title="Safe Props">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 5.0</span>
+                            <span class="review-count">(300+ Babies)</span>
+                        </div>
+                        <h3>Baby & Newborn Shoot</h3>
+                        <p class="card-desc">Warm, clean, and safe studio shoot with cute baby wraps, baskets, and props. Includes photos with parents and a 20-page mini album.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">14,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Baby & Newborn Shoot">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Maternity Photoshoot -->
+                <div class="card reveal delay-1" data-category="baby">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=700&q=80" alt="Maternity Shoot">
+                        <span class="card-badge bestseller">Trending</span>
+                        <div class="diet-indicator" title="Gowns Included">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="review-count">(200+ Mothers)</span>
+                        </div>
+                        <h3>Maternity Photoshoot</h3>
+                        <p class="card-desc">Celebrate motherhood with elegant studio or outdoor poses, lovely designer dresses, partner photos, and 30 edited pictures.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">10,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Maternity Photoshoot">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Office & Profile Headshots -->
+                <div class="card reveal delay-2" data-category="portrait">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80" alt="Corporate Headshot">
+                        <span class="card-badge chef">Business</span>
+                        <div class="diet-indicator" title="Quick Turnaround">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="review-count">(160+ Profiles)</span>
+                        </div>
+                        <h3>Office & Profile Headshots</h3>
+                        <p class="card-desc">Sharp, professional portraits for your LinkedIn, resume, company team page, and speaker profiles. Delivered in 24 hours.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">5,500</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Office & Profile Headshots">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Birthday & Party Coverage -->
+                <div class="card reveal" data-category="commercial">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Birthday Party Shoot">
+                        <span class="card-badge spicy"><i class="fa-solid fa-cake-candles"></i> Celebrations</span>
+                        <div class="diet-indicator" title="Full Event">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="review-count">(220+ Events)</span>
+                        </div>
+                        <h3>Birthday & Party Coverage</h3>
+                        <p class="card-desc">Complete photo and video coverage for 1st birthdays, milestone anniversaries, and family parties with candid moments of all guests.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">18,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Birthday & Party Coverage">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Product & Brand Photography -->
+                <div class="card reveal delay-1" data-category="commercial">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=700&q=80" alt="Product Photography">
+                        <span class="card-badge refreshing">For Business</span>
+                        <div class="diet-indicator" title="Online Store Ready">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-rating">
+                            <span class="stars"><i class="fa-solid fa-star"></i> 5.0</span>
+                            <span class="review-count">(120+ Brands)</span>
+                        </div>
+                        <h3>Product & Brand Photography</h3>
+                        <p class="card-desc">Clean, eye-catching photos of your products on white backgrounds or lifestyle settings for your website, Amazon, and Instagram ads.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="currency">₹</span><span class="price">16,000</span>
+                            </div>
+                            <button class="add-to-plate-btn" data-name="Product & Brand Photography">
+                                <i class="fa-solid fa-plus"></i> Inquire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> OUR WORK</span>
+                <h2 class="section-title">Photo & Video Gallery</h2>
+                <div class="title-separator"><span>✦</span></div>
+                <p class="section-subtitle">Take a look at some of our favorite photos and client shoots.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding Couple">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Weddings</span>
+                        <h3>Happy Bride & Groom</h3>
+                        <p>Beautiful moments on the big day</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=700&q=80" alt="Fashion Model">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Fashion</span>
+                        <h3>Studio Portrait</h3>
+                        <p>Professional lighting and style</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" alt="Outdoor Portrait">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Portraits</span>
+                        <h3>Outdoor Light</h3>
+                        <p>Natural beauty in golden hour</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=80" alt="Cute Baby">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Baby</span>
+                        <h3>Newborn Smiles</h3>
+                        <p>Sweet and cozy baby memories</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=700&q=80" alt="Couple by Sunset">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Couples</span>
+                        <h3>Sunset by the Beach</h3>
+                        <p>Relaxed outdoor moments together</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item large reveal delay-3">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Party Hall">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Celebrations</span>
+                        <h3>Grand Party Hall</h3>
+                        <p>Fun events and happy crowds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag"><i class="fa-solid fa-quote-left"></i> REVIEWS</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="title-separator"><span>✦</span></div>
+                <p class="section-subtitle">Real feedback from happy couples and families.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card reveal delay-1">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "They covered our wedding and did an amazing job! The photographers were very polite, and the video quality was outstanding. Everyone in our family loved the printed album!"
+                    </p>
+                    <div class="reviewer-meta">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Jessica and David" class="reviewer-avatar">
+                        <div>
+                            <h4>Jessica & David</h4>
+                            <span>Wedding Couple</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal delay-2">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "I needed model portfolio photos, and they made me feel so confident and relaxed. The photos were delivered in just 3 days and looked super professional!"
+                    </p>
+                    <div class="reviewer-meta">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="reviewer-avatar">
+                        <div>
+                            <h4>Marcus Vance</h4>
+                            <span>Fashion Model</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal delay-3">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "We did a 1-month baby photoshoot here. The studio was clean and warm. They handled our baby with so much patience and care. Highly recommended to all parents!"
+                    </p>
+                    <div class="reviewer-meta">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Elena and Thomas" class="reviewer-avatar">
+                        <div>
+                            <h4>Elena & Thomas</h4>
+                            <span>Happy Parents</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="reservation section-padding" id="booking">
+        <div class="container">
+            <div class="reservation-card reveal">
+                <div class="reservation-grid">
+                    <div class="reservation-info">
+                        <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> EASY BOOKING</span>
+                        <h2>Book Your Photoshoot Today</h2>
+                        <p>Reserve your date early. Tell us what kind of shoot you want, and our friendly team will contact you to plan everything.</p>
+
+                        <div class="reservation-perks">
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Free consultation to plan your shoot</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Private changing room in our AC studio</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Fast delivery of all digital photos</span>
+                            </div>
+                        </div>
+
+                        <div class="hotline-box">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div>
+                                <span>Call Us Directly:</span>
+                                <h4>+91 98765 43210</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <form class="reservation-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestName"><i class="fa-regular fa-user"></i> Your Name</label>
+                                <input type="text" id="guestName" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestPhone"><i class="fa-brands fa-whatsapp"></i> Phone / WhatsApp</label>
+                                <input type="tel" id="guestPhone" placeholder="e.g. +91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookDate"><i class="fa-regular fa-calendar"></i> Shoot Date</label>
+                                <input type="date" id="bookDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookTime"><i class="fa-regular fa-clock"></i> Preferred Time</label>
+                                <select id="bookTime" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="06:30 AM (Sunrise / Outdoor)">06:30 AM (Sunrise Outdoor)</option>
+                                    <option value="10:00 AM (Morning Studio)">10:00 AM (Morning Studio)</option>
+                                    <option value="02:30 PM (Afternoon Studio)">02:30 PM (Afternoon Studio)</option>
+                                    <option value="04:30 PM (Sunset / Outdoor)">04:30 PM (Sunset Outdoor)</option>
+                                    <option value="Full Day (Wedding / Event)">Full Day Event</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestsCount"><i class="fa-solid fa-camera"></i> Package Type</label>
+                                <select id="guestsCount" required>
+                                    <option value="Full Wedding Package">Full Wedding Package</option>
+                                    <option value="Pre-Wedding Couple Shoot">Pre-Wedding Couple Shoot</option>
+                                    <option value="Fashion & Model Portfolio">Fashion & Model Portfolio</option>
+                                    <option value="Baby & Newborn Shoot">Baby & Newborn Shoot</option>
+                                    <option value="Maternity Photoshoot">Maternity Photoshoot</option>
+                                    <option value="Office & Profile Headshots">Office & Profile Headshots</option>
+                                    <option value="Birthday & Party Coverage">Birthday & Party Coverage</option>
+                                    <option value="Product & Brand Photography">Product & Brand Photography</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="seatingPref"><i class="fa-solid fa-location-dot"></i> Shoot Location</label>
+                                <select id="seatingPref" required>
+                                    <option value="Our AC Studio">Our AC Studio</option>
+                                    <option value="Outdoor Location">Outdoor Location</option>
+                                    <option value="Your Venue / Event Hall">Your Venue / Event Hall</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequest"><i class="fa-regular fa-comment-dots"></i> Any Special Notes (Optional)</label>
+                            <input type="text" id="specialRequest" placeholder="e.g. Drone video, special themes, or props needed">
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-block">
+                            <span>Book Photoshoot Now</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag"><i class="fa-solid fa-map-pin"></i> CONTACT US</span>
+                <h2 class="section-title">Get in Touch With Us</h2>
+                <div class="title-separator"><span>✦</span></div>
+                <p class="section-subtitle">We are here to answer your questions and help you plan your shoot.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Cards -->
+                <div class="contact-card reveal delay-1">
+                    <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Studio Address</h3>
+                    <p>42/7 Harbour View Avenue,<br>Coastal Road, City Center - 628001</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">Get Directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="contact-card reveal delay-2">
+                    <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Phone Numbers</h3>
+                    <p>+91 98765 43210<br>+91 0461 2345678</p>
+                    <a href="tel:+919876543210" class="contact-link">Call Us Now <i class="fa-solid fa-phone"></i></a>
+                </div>
+
+                <div class="contact-card reveal delay-3">
+                    <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Studio Timings</h3>
+                    <p>Monday - Sunday<br><strong>Studio Open:</strong> 09:00 AM - 09:00 PM<br><strong>Photoshoots:</strong> On booking</p>
+                    <span class="open-badge">● Open All 7 Days</span>
+                </div>
+
+                <div class="contact-card reveal delay-4">
+                    <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp Chat</h3>
+                    <p>Chat directly with our team for quick prices and date checks.</p>
+                    <a class="btn btn-whatsapp" href="https://wa.me/919876543210?text=Hello%20Royal%20Lens%20Studio!%20I%20would%20like%20to%20know%20more%20about%20your%20photoshoot%20packages" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-camera-retro"></i> Royal Lens Studio
+                </div>
+                <p class="footer-desc">
+                    Professional photo and video studio. We capture your happiest moments with friendly service, great lighting, and high quality photos.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Studio</a></li>
+                    <li><a href="#features">Why Choose Us</a></li>
+                    <li><a href="#portfolio">Packages & Prices</a></li>
+                    <li><a href="#gallery">Photo Gallery</a></li>
+                    <li><a href="#booking">Book a Shoot</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Popular Shoots</h4>
+                <ul class="footer-links">
+                    <li><a href="#portfolio">Wedding Photography</a></li>
+                    <li><a href="#portfolio">Pre-Wedding Shoots</a></li>
+                    <li><a href="#portfolio">Fashion & Modeling</a></li>
+                    <li><a href="#portfolio">Baby & Newborn Photos</a></li>
+                    <li><a href="#portfolio">Birthday Parties</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Special Offers</h4>
+                <p>Enter your email to receive our latest discount offers on photo packages.</p>
+                <form class="footer-newsletter" id="newsletterForm">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <span class="safe-text"><i class="fa-solid fa-shield-halved"></i> 100% Privacy. No spam.</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2026 Royal Lens Studio. All Rights Reserved. Demo Website.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <a href="https://wa.me/919876543210?text=Hello%20Royal%20Lens%20Studio!%20I%20would%20like%20to%20know%20more%20about%20your%20photoshoot%20packages" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
